@@ -52,9 +52,7 @@ class App extends Component {
         /************************
         * Set ETH balance below *
         ************************/
-        // this.web3.eth.getBalance(defaultAccount, (err, ethBalance) => {
-        //   this.setState({ ethBalance })
-        // })
+
 
         // Get detected network and load the token contract
         this.web3.version.getNetwork(async (err, netId) => {
@@ -71,27 +69,22 @@ class App extends Component {
             /**************************
             * Set token balance below *
             **************************/
-            // token.balanceOf(defaultAccount, (err, tokenBalance) => {
-            //   this.setState({ tokenBalance })
-            // })
+
+
             /*************************
             * Set token sybmol below *
             *************************/
-            // token.symbol((err, tokenSymbol) => {
-            //   this.setState({ tokenSymbol })
-            // })
+
 
             /*********************************
             * Set token decimal places below *
             *********************************/
-            // token.decimals((err, tokenDecimals) => {
-            //   this.setState({ tokenDecimals })
-            // })
+
 
             /********************************
             * Call loadEventListeners below *
             ********************************/
-            // this.loadEventListeners()
+
           } else {
             console.error('Token has not been deployed to the detected network.')
           }
@@ -111,16 +104,12 @@ class App extends Component {
       /**************************
       * Set token balance below *
       **************************/
-      // this.state.token.balanceOf(account, (err, tokenBalance) => {
-      //   this.setState({ tokenBalance })
-      // })
+
 
       /**************************
       * Set ETH balance below *
       **************************/
-      // this.web3.eth.getBalance(account, (err, ethBalance) => {
-      //   this.setState({ ethBalance })
-      // })
+
     }
   }
 
@@ -131,29 +120,17 @@ class App extends Component {
     /**********************************
     * Watch tokens minted event below *
     **********************************/
-    // this.state.token.LogTokensMinted({ fromBlock: 'latest', toBlock: 'latest' })
-    // .watch((err, res) => {
-    //   alert('Tokens Minted!')
-    //   this.loadAccountBalances(this.web3.eth.accounts[this.state.defaultAccount])
-    // })
+
 
     /************************************
     * Watch tokens transfer event below *
     ************************************/
-    // Tokens transferred
-    // this.state.token.Transfer({ fromBlock: 'latest', toBlock: 'latest' })
-    // .watch((err, res) => {
-    //   alert('Tokens Transferred!')
-    //   this.loadAccountBalances(this.web3.eth.accounts[this.state.defaultAccount])
-    // })
+
 
     /**********************************
     * Watch error emitted event below *
     **********************************/
-    // this.state.token.LogErrorString({ fromBlock: 'latest', toBlock: 'latest' })
-    // .watch((err, res) => {
-    //   alert(res.args.errorString)
-    // })
+
   }
 
   /**
@@ -167,15 +144,7 @@ class App extends Component {
       /*********************
       * Execute mint below *
       *********************/
-      // this.state.token.mint(
-      //   user,
-      //   amount*10**this.state.tokenDecimals, // Convert to correct decimal places
-      //   { from: this.web3.eth.accounts[this.state.defaultAccount] },
-      //   (err, res) => {
-      //     console.log(err)
-      //     console.log(res)
-      //   }
-      // )
+
     }
   }
 
@@ -190,15 +159,7 @@ class App extends Component {
       /*******************************
       * Execute token transfer below *
       *******************************/
-      // this.state.token.transfer(
-      //   user,
-      //   amount*10**this.state.tokenDecimals, // Convert to correct decimal places
-      //   { from: this.web3.eth.accounts[this.state.defaultAccount] },
-      //   (err, res) => {
-      //     console.log(err)
-      //     console.log(res)
-      //   }
-      // )
+
     }
   }
 
@@ -265,7 +226,7 @@ class App extends Component {
           </div>
 
           <br />
-          
+
           <h3>TODO: Create a form to transfer tokens!</h3>
         </div>
       </MuiThemeProvider>
