@@ -83,18 +83,7 @@ class App extends Component {
         />
       </div>
       <br />
-      <div>
-        <h3>Transfer Tokens</h3>
-        <TextField floatingLabelText="User to transfer tokens to." style={{width: 400}} value={this.state.transferUser}
-          onChange={(e, transferUser) => { this.setState({ transferUser }) }}
-        />
-      <TextField floatingLabelText="Amount." style={{width: 100}} value={this.state.transferAmount}
-          onChange={(e, transferAmount) => { this.setState({ transferAmount })}}
-        />
-        <RaisedButton label="Transfer" labelPosition="before" primary={true}
-          onClick={() => this.transfer(this.state.transferUser, this.state.transferAmount)}
-        />
-      </div>
+      
     </div>
 
     return (
