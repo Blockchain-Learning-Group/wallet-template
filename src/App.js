@@ -21,16 +21,13 @@ class App extends Component {
     };
   }
 
-  componentDidMount() {
+  async componentDidMount() {
     // Create a web3 connection
 
 
   }
 
-  /**
-   * Load the accounts token and ether balances.
-   * @param  {Address} account The user's ether address.
-   */
+  // Load the accounts token and ether balances.
   loadAccountBalances(account) {
 
 
