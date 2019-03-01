@@ -28,7 +28,7 @@ class App extends Component {
   }
 
   // Load the accounts token and ether balances.
-  loadAccountBalances(account) {
+  async loadAccountBalances(account) {
 
 
   }
