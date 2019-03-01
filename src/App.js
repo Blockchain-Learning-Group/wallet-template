@@ -80,7 +80,7 @@ class App extends Component {
         />
       </div>
       <br />
-      
+      {/* ADD THE TRANSFER TOKENS FORM BENEATH HERE */}
     </div>
 
     return (
