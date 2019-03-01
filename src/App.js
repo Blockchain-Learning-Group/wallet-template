@@ -18,7 +18,7 @@ class App extends Component {
     super(props)
     this.state = {
       token: null, // token contract
-    }
+    };
   }
 
   componentDidMount() {
@@ -61,7 +61,7 @@ class App extends Component {
   }
 
   render() {
-    let component
+    let component;
 
     component = <div>
       <h3>Active Account</h3>
