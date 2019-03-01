@@ -40,13 +40,13 @@ class App extends Component {
   }
 
   // Buy new tokens with eth
-  buy(amount) {
+  async buy(amount) {
 
 
   }
 
   // Transfer tokens to a user
-  transfer(user, amount) {
+  async transfer(user, amount) {
 
 
   }
